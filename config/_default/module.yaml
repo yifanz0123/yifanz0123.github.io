@@ -6,6 +6,7 @@
 
 noVendor: "github.com/HugoBlox/hugo-blox-builder/**"
 private: "github.com/HugoBlox/all-access/blox-all-access"
+proxy: https://goproxy.cn
 
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify

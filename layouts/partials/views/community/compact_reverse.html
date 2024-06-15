@@ -1,0 +1,73 @@
+{{ $item := .item }}
+
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+{{ $link = $item.Params.external_link }}
+{{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ $resource := partial "functions/get_featured_image.html" $item }}
+{{ $anchor := $item.Params.image.focal_point | default "Center" }}
+<br>
+
+<div class="md:flex">
+<div class="md:flex-shrink-0 overflow-hidden">
+    {{ with $resource }}
+    {{ $image := .Fill (printf "655x655 %s" $anchor) }}
+    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+    <img class="h-48 w-full object-cover md:w-48 hover:scale-125 transition duration-500 cursor-pointer object-cover"
+        loading="lazy" src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+        alt="{{ $item.Title | plainify }}">
+    {{end}}
+</div>
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="mb-5">
+        <div class="p-8">
+            <div class="uppercase tracking-wide text-lg text-primary-700 dark:text-primary-200 font-bold">{{
+                $item.Title }}</div>
+    </a>
+    <p class="block mt-1 text-sm leading-tight text-black dark:text-white">
+        {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
+    </p>
+    <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">
+        {{- $item.Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}
+    </p>
+    {{ if $item.Params.url_dataset }}
+    <button
+        class="hb-attachment-link hb-attachment-link-small border-2 border-current px-2 rounded hover:bg-primary-50 mt-1.5"
+        href="{{ $item.Params.url_dataset }}">
+        dataset
+    </button>
+    {{ end }}
+    {{ if $item.Params.url_pdf }}
+    <button
+        class="hb-attachment-link hb-attachment-link-small border-2 border-current px-2 rounded hover:bg-primary-50 mt-1.5"
+        href="{{ $item.Params.url_pdf }}">
+        pdf
+    </button>
+    {{ end }}
+    {{ if $item.Params.url_dataset }}
+    <button
+        class="hb-attachment-link hb-attachment-link-small border-2 border-current px-2 rounded hover:bg-primary-50 mt-1.5"
+        href="{{ $item.Params.url_code }}">
+        code
+    </button>
+    {{ end }}
+    {{ if $item.Params.url_slides }}
+    <button
+        class="hb-attachment-link hb-attachment-link-small border-2 border-current px-2 rounded hover:bg-primary-50 mt-1.5"
+        href="{{ $item.Params.url_slides }}">
+        slides
+    </button>
+    {{ end }}
+    {{ if $item.Params.url_video }}
+    <button
+        class="hb-attachment-link hb-attachment-link-small border-2 border-current px-2 rounded hover:bg-primary-50 mt-1.5"
+        href="{{ $item.Params.url_video }}">
+        video
+    </button>
+    {{ end }}
+</div>
+</div>
+<br>
+<hr>

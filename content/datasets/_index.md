@@ -1,9 +1,9 @@
 ---
-title: Publications
+title: Datasets
 cms_exclude: true
 
 # View.
-view: community/compact_reverse
+view: community/compact
 
 # Optional header image (relative to `static/media/` folder).
 banner:
