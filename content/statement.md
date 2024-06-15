@@ -10,6 +10,9 @@ design:
 # Page sections
 sections:
   - block: markdown
-    content: |-
-    write your **Research Statement** here.
+    content: 
+      text: |-
+        write your **Research Statement** here in format of markdown.
+    design:
+      columns: '1'
 ---
