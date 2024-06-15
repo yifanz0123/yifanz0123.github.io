@@ -23,5 +23,5 @@ main:
     url: statement/
     weight: 40
   - name: CV
-    url: /cv.pdf
+    url: /upload/cv.pdf
     weight: 50
