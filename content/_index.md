@@ -15,7 +15,6 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          # filename: 'bio-background.jpg'
           filename: background.jpg
           filters:
             brightness: 0.8
@@ -23,7 +22,7 @@ sections:
           position: center
           parallax: false
       # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
+      # css_class: "bg-gray-100 dark:bg-gray-900"
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
