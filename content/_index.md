@@ -16,9 +16,9 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: background.jpg
+          filename: bio-background.jpg
           filters:
-            brightness: 0.4
+            brightness: 0.8
           size: cover
           position: center
           parallax: false
