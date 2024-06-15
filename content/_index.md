@@ -17,7 +17,7 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           # filename: 'bio-background.jpg'
-          filename: icon.png
+          filename: /media/bio-background.jpg
           filters:
             brightness: 0.8
           size: cover
