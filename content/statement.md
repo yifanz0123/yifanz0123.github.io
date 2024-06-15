@@ -13,6 +13,4 @@ sections:
     content: 
       text: |-
         write your **Research Statement** here in format of markdown.
-    design:
-      columns: '1'
 ---

@@ -38,7 +38,7 @@ header:
     show_theme_chooser: true
     logo:
       text: "Yifan Zhang"
-      filename: "logo.png"
+      filename: ""
 
 # Site footer
 footer:
