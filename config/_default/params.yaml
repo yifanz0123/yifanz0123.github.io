@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: emerald
+  color: black
   font: serif
 
 # SEO
@@ -32,10 +32,13 @@ header:
   navbar:
     enable: true
     blox: "navbar"
+    align: "left"
+    fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Chien Shiung Wu"
+      text: ""
+      filename: "logo.png"
 
 # Site footer
 footer:
