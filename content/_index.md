@@ -11,19 +11,17 @@ sections:
       username: admin
       text:
     design:
-      css_class: dark
       background:
         color: black
         image:
           # Add your image background to `assets/media/`.
           # filename: 'bio-background.jpg'
-          filename: /media/bio-background.jpg
+          filename: background.jpg
           filters:
             brightness: 0.8
           size: cover
           position: center
           parallax: false
-    design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
       # Reduce spacing
