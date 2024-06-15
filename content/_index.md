@@ -11,6 +11,7 @@ sections:
       username: admin
       text:
     design:
+      css_class: dark
       background:
         color: black
         image:
@@ -21,8 +22,8 @@ sections:
           size: cover
           position: center
           parallax: false
-      # Section background color (CSS class)
-      # css_class: "bg-gray-100 dark:bg-gray-900"
+        # Section background color (CSS class)
+        css_class: "bg-gray-100 dark:bg-gray-900"
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
