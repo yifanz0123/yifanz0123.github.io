@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 张乙凡
+title: Yifan Zhang | 张乙凡
 
 # Name pronunciation (optional)
-name_pronunciation: Zhang Yi Fan
+##name_pronunciation: Zhang Yi Fan
 
 # Full name (for SEO)
-first_name: Yi Fan 
+first_name: Yifan 
 last_name: Zhang
 
 # Status emoji
-status:
-  icon: ☕️
+##status:
+##  icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
