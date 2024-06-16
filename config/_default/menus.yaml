@@ -7,7 +7,7 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Working Papers
+  - name: Research
     url: /publication
     weight: 11
   # - name: Talks
@@ -16,12 +16,12 @@ main:
   - name: Teaching
     url: /teaching/
     weight: 20
-  - name: Work in Progress
-    url: /work-in-progress
-    weight: 30
-  - name: Research Statement
-    url: statement/
-    weight: 40
+  # - name: Work in Progress
+  #  url: /work-in-progress
+  #  weight: 30
+  # - name: Research Statement
+  #  url: statement/
+  #  weight: 40
   - name: Datasets
     url: /datasets
     weight: 45
