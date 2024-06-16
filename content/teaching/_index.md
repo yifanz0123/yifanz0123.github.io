@@ -1,6 +1,6 @@
 ---
 title: Teaching
-
+---
   - block: markdown
     content:
       title:'Toulouse School of Economics (TA)'
