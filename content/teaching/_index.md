@@ -1,16 +1,6 @@
 ---
 title: Teaching
-cms_exclude: true
 
-# View.
-view: community/compact
-
-# Optional header image (relative to `static/media/` folder).
-# banner:
-#  caption: ''
-#  image: ''
-
----
   - block: markdown
     content:
       title:'Toulouse School of Economics (TA)'
@@ -23,3 +13,4 @@ view: community/compact
   
         Macroeconomics, 2^nd^ year Bachelor, fall 2023
 
+---
