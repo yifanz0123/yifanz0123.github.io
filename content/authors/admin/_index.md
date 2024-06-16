@@ -34,7 +34,7 @@ profiles:
     url: 'mailto:yifan.zhang@tse-fr.eu'
     label: E-mail Me
   - icon: brands/x
-     url: https://twitter.com/TedZhang1996
+    url: https://twitter.com/TedZhang1996
 ##   - icon: brands/instagram
 ##     url: https://www.instagram.com/
 ##  - icon: brands/github
