@@ -16,7 +16,7 @@ marketing:
     local_business_type: ''
     org_name: ''
     description: 'A highly-customizable Hugo résumé theme powered by Hugo Blox Builder.'
-    twitter: 'GetResearchDev'
+    twitter: 'TedZhang1996'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -35,7 +35,7 @@ header:
     align: "left"
     fixed_to_top: true
     show_search: false
-    show_theme_chooser: true
+    show_theme_chooser: false
     logo:
       text: "Yifan Zhang"
       filename: ""
@@ -43,7 +43,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Yifan Zhang. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -61,3 +61,5 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+i_am_a_sponsor: true
