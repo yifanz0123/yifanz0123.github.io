@@ -22,7 +22,6 @@ abstract: "This study explores the persistence and transmission of son preferenc
 # Summary. An optional shortened abstract.
 summary: "This project identifies and compares the effects of both horizontal and vertical transmission of son preference."
 
-tags:
-- Source Themes
+
 featured: false
 ---
