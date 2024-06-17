@@ -32,10 +32,10 @@ featured: true
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Ancestor Worship Density'
+  caption: ''
   focal_point: ''
   preview_only: false
 
 ---
-![Ancestor Worship]{/content/datasets/Ancestor Worship/featured.png}
+![Ancestor Worship](/content/datasets/Ancestor Worship/featured.png)
 
