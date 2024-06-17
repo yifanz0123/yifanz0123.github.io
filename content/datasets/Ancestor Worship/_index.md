@@ -36,4 +36,6 @@ image:
   focal_point: ''
   preview_only: false
 
+---
+![Ancestor Worship]{/content/datasets/Ancestor Worship/featured.png}
 
