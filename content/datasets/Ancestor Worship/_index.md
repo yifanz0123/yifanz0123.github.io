@@ -37,5 +37,5 @@ image:
   preview_only: false
 
 ---
-![Ancestor Worship](/content/datasets/Ancestor Worship/featured.png)
+![Ancestor Worship](featured.png)
 
