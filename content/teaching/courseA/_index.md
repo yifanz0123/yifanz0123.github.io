@@ -1,7 +1,8 @@
 ---
+  - title: Toulouse School of Economics (TA)
   - block: markdown
     content:
-      title:'Toulouse School of Economics (TA)'
+      
       text: |-
         Microeconomics, 1^st^ year Bachelor, spring 2024
 
