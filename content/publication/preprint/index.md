@@ -1,8 +1,8 @@
 ---
-title: "An example preprint / working paper"
+title: "The Transmission of Son Preference"
 authors:
 - admin
-date: "2024"
+date: "2024-06-17"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -11,7 +11,7 @@ publishDate:
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+# publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
