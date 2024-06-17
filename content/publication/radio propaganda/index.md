@@ -23,7 +23,7 @@ publishDate: ""
 # abstract: 
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: "Radio propoganda not only reshapes individuals' political belief and behaviors, but also has strong impacts on their occupation choices"
 
 
 featured: false
@@ -62,3 +62,5 @@ featured: false
 
 ---
 ## Abstract
+  
+Drawing on individual-level data from the 2000-15 population censuses and 2010-20 social surveys, I analyze the concequences of radio propaganda from Taiwan on mainland China. My prelimnary results suggest that individuals who lived in the areas with better exposure to the Voice of Free China during adolescence, are less likely to join bureacratic system and Chinese Communist Party. Besides, they have lower trust to local government but are more like to start their own business.   

@@ -20,7 +20,7 @@ publication_short: ""
 # abstract:
 
 # Summary. An optional shortened abstract.
-summary: "This project identifies and compares the effects of both horizontal and vertical transmission of son preference."
+summary: "This project identifies and compares the effects of both horizontal and vertical transmission of son preference"
 
 
 featured: false
