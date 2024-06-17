@@ -1,7 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
 
-type: landing
   - block: markdown
     content:
       title: '📚 My Research'
