@@ -15,7 +15,7 @@ doi: ''
 
 
 # Summary. An optional shortened abstract.
-summary: "A map of ancestor worship constructed from 2467 Chinese county gazetteers"
+summary: "A map of ancestor worship density constructed from 2467 Chinese county gazetteers"
 
 
 
@@ -32,7 +32,7 @@ featured: true
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Ancestor Worship Distribution'
+  caption: 'Ancestor Worship Density'
   focal_point: ''
   preview_only: false
 
