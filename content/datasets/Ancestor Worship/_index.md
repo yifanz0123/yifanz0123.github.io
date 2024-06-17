@@ -37,5 +37,3 @@ image:
   preview_only: false
 
 
----
-
