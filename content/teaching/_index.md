@@ -1,18 +1,21 @@
 ---
-# Leave the homepage title empty to use the site title
-
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
-    design:
-      columns: '1'
-
-
+title: Uses
+date: 2023-10-24
+pager: false
 ---
+
+The idea of a Uses page is to tell you about the stuff I use.
+
+Make sure to check out [uses.tech](https://uses.tech/) for a list of everyone's Uses pages!
+
+I often get asked about what software or hardware I use, so this page will serve as a living document and a place to point curious readers to when I get asked.
+
+## Editor + Terminal
+
+- [Visual Studio Code](https://code.visualstudio.com/) is my current editor
+- Chrome is my main browser
+- iTerm2 is my terminal
+
+## Desktop Apps
+
+- Better Touch Tool for window management and custom keyboard shortcuts
