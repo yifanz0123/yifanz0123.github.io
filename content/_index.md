@@ -27,9 +27,9 @@ sections:
       title: 'Welcome!'
       subtitle: ''
       text: |-
-        I am a Ph.D. candidate at Toulouse School of Economics and I will be in the 2024/25 academic job market. I apply empirical tools to understand the determinants of individual beliefs and behaviors.
+        I am currently a Ph.D. candidate at the Toulouse School of Economics. I apply empirical tools to understand the determinants of individual beliefs and behaviors. I will join the Kellogg School of Management at Northwestern University as a Postdoc in 2025-26 AY.
 
-        My research fields are Economic History, Development Economics, and Political Economy. In my JMP, I identify and compare both horizontal transmission and vertical transmission of son preference with the usage of natural experiments, historical archives, and population censuses.
+        My research fields are Economic History, Development Economics, and Political Economy. In my ongoing work, I identify and compare both horizontal transmission and vertical transmission of son preference with the usage of natural experiments, historical archives, and population censuses.
         
 
     design:
