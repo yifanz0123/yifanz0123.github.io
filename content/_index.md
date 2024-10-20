@@ -29,7 +29,7 @@ sections:
       text: |-
         I am currently a Ph.D. candidate at the Toulouse School of Economics. I apply empirical tools to understand the determinants of individual beliefs and behaviors. I will join the Kellogg School of Management at Northwestern University as a Postdoc in 2025-26 AY.
 
-        My research fields are Economic History, Development Economics, and Political Economy. In my ongoing work, I identify and compare both horizontal transmission and vertical transmission of son preference with the usage of natural experiments, historical archives, and population censuses.
+        My research fields are Development Economics, Economic History, and Political Economy. In one of my ongoing works, I identify and compare both horizontal transmission and vertical transmission of son preference using natural experiments, historical archives, and population censuses.
         
 
     design:
