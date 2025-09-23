@@ -28,6 +28,7 @@ sections:
       subtitle: ''
       text: |-
         I am an empirical economist and study the questions about the determinants of individual beliefs and behaviors. My research fields are Development Economics, Economic History, and Political Economy. In one of my ongoing works, I identify and compare both horizontal transmission and vertical transmission of son preference using natural experiments, historical archives, and population censuses.
+    
         I received my PhD in Economics from the Toulouse School of Economics in September 2025. Prior to this, I earned my Bachelor's degree in Economics from the Chinese University of Hong Kong in Shenzhen in 2018.
         
 
