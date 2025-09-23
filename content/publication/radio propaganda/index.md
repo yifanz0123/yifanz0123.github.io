@@ -23,7 +23,7 @@ publishDate: ""
 # abstract: 
 
 # Summary. An optional shortened abstract.
-summary: "Radio propaganda not only reshapes individuals' political belief and behaviors but also has strong impacts on their occupation choices"
+summary: "Radio propaganda not only reshapes individuals' political beliefs and behaviors but also has a strong impact on their occupation choices"
 
 
 featured: false
