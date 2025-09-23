@@ -4,10 +4,13 @@ env:
   WC_HUGO_VERSION: '0.125.2'
 
 on:
+  # Trigger the workflow every time you push to the `main` branch
   push:
     branches: ["main"]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
+# Provide permission to clone the repo and deploy it to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -18,58 +21,52 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Build website
   build:
+    if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+          # Fetch history for Hugo's .GitInfo and .Lastmod
+        fetch-depth: 0
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: ${{ env.WC_HUGO_VERSION }}
+        extended: true
+    - uses: actions/cache@v3
+      with:
+        path: /tmp/hugo_cache_runner/
+        key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
+        restore-keys: |
+          ${{ runner.os }}-hugomod-
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v4
+    - name: Build with Hugo
+      env:
+        HUGO_ENVIRONMENT: production
+      run: |
+        echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
+        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+    - name: Generate Pagefind search index
+      run: npx pagefind --site "public"
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./public
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: ${{ env.WC_HUGO_VERSION }}
-          extended: true
-
-      - uses: actions/cache@v3
-        with:
-          path: /tmp/hugo_cache_runner/
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-
-      - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-        run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-
-      - name: Generate Pagefind search index
-        run: npx pagefind --site "public"
-
-      - name: Upload artifact (optional)
-        uses: actions/upload-artifact@v3  ### <-- 改动: 原本是 upload-pages-artifact@v3, 改为普通 artifact 上传
-        with:
-          name: site
-          path: ./public
-
+  # Deploy website to GitHub Pages hosting
   deploy:
+    if: github.repository_owner != 'HugoBlox'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v5   ### <-- 改动: 原本 deploy 使用 deploy-pages@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: main          ### <-- 改动: 原本 deploy-pages@v2 使用 environment, 对用户仓库会报 404
-          keep_files: true              ### <-- 改动: 保留旧文件，可选，原来 deploy-pages 没这个参数
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
