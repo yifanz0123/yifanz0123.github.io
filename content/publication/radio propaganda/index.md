@@ -1,5 +1,5 @@
 ---
-title: "Radio Propaganda and Brave New World"
+title: "Radio (Counter-)propaganda and Job Choices"
 authors:
 - admin
 
@@ -63,4 +63,4 @@ featured: false
 ---
 ## Abstract
   
-Drawing on individual-level data from the 2000-15 population censuses and 2010-20 social surveys, I analyze the consequences of radio propaganda from Taiwan on mainland China. My preliminary results suggest that individuals who lived in areas with better exposure to the Voice of Free China during adolescence are less likely to join the bureaucratic system and the Chinese Communist Party. Besides, they have lower trust to the local government but are more like to start their own business.
+Drawing on individual-level data from the 2000-15 population censuses and 2010-20 social surveys, I analyze the consequences of radio (counter-)propaganda from Taiwan on mainland China. My preliminary results suggest that individuals who lived in areas with better exposure to the Voice of Free China during adolescence are less likely to join the bureaucratic system and the Chinese Communist Party. Besides, they have lower trust to the local government but are more likely to start their own business.
