@@ -61,7 +61,7 @@ jobs:
           pagefind --site "public"
 
       - name: Upload artifact (optional backup)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: ./public
