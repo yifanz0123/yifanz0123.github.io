@@ -20,18 +20,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD candidate in Economics
+role: Postdoc Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Toulouse School of Economics
-    url: https://www.tse-fr.eu/
+  - name: Kellogg School of Management, Northwestern University
+    url: https://www.kellogg.northwestern.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:yifan.zhang@tse-fr.eu'
+    url: 'mailto:yifan.zhang2@kellogg.northwestern.edu'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/TedZhang1996
