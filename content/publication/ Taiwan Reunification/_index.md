@@ -1,7 +1,7 @@
 ---
 title: "The Determinants of Taiwanese Support for Reunification with the Mainland"
 authors: "Nancy Qian, Marco Tabellini, Yifan Zhang"
-*By Nancy Qian, Marco Tabellini, Yifan Zhang*
+
 author_notes:
 
 date: "2025-09-23"
