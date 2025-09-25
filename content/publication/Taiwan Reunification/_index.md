@@ -1,11 +1,11 @@
 ---
 title: "The Determinants of Taiwanese Support for Reunification with the Mainland"
 authors:
-  - Nancy Qian
-  - Marco Tabellini
+  - nancy-qian
+  - marco-tabellini
   - admin
   
-author_notes:
+# author_notes:
 
 date: "2025-09-23"
 doi: ""
