@@ -1,7 +1,7 @@
 ---
 title: "Radio (Counter-)propaganda and Job Choices"
 authors:
-- admin
+  - admin
 
 author_notes:
 

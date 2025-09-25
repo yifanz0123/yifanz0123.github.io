@@ -1,12 +1,12 @@
 ---
 title: "The Transmission of Son Preference"
 authors:
-- admin
+  - admin
 date: "2024-06-17"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 
+# publishDate: 
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
