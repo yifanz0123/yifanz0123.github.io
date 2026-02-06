@@ -6,6 +6,12 @@ date: "2026-02-02"
 doi: ""
 url_pdf: upload/papers/Son_Preference.pdf
 
+url_ssrn: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6105726"
+links:
+  - name: SSRN
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6105726"
+
+
 # Schedule page publish date (NOT publication's date).
 # publishDate: 
 
