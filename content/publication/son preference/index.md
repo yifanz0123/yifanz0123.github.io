@@ -4,7 +4,7 @@ authors:
   - admin
 date: "2026-02-02"
 doi: ""
-url_pdf: Son_Preference.pdf
+url_pdf: content/publication/son preference/Son_Preference.pdf
 # Schedule page publish date (NOT publication's date).
 # publishDate: 
 
