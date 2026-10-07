@@ -1,0 +1,59 @@
+{{/* Homepage-only block for the site's pinned HugoBlox Tailwind module. */}}
+{{ $page := .wcPage }}
+{{ $content := .wcBlock.content }}
+{{ $person := site.GetPage (printf "/authors/%s" ($content.username | default "admin")) }}
+{{ if not $person }}{{ errorf "Job market homepage: author page not found" }}{{ end }}
+{{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $paper := site.GetPage $content.paper_path }}
+{{ if not $paper }}{{ errorf "Job market homepage: paper page %s not found" $content.paper_path }}{{ end }}
+
+<div class="jm-home">
+  <aside class="jm-profile" aria-label="Profile and contact information">
+    {{ with $avatar }}
+      {{ $portrait := .Fill "480x480 Center webp" }}
+      <img class="jm-portrait" src="{{ $portrait.RelPermalink }}" width="240" height="240" alt="Portrait of {{ $person.Params.first_name }} {{ $person.Params.last_name }}" fetchpriority="high">
+    {{ end }}
+    <h1 class="jm-name">
+      {{ range $index, $name := split $person.Title "|" }}
+        <span{{ if gt $index 0 }} class="jm-name-secondary" lang="zh"{{ end }}>{{ trim $name " " }}</span>
+      {{ end }}
+    </h1>
+    {{ with $person.Params.role }}<p class="jm-role">{{ . }}</p>{{ end }}
+    {{ range $person.Params.organizations }}
+      <p class="jm-affiliation">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}</p>
+    {{ end }}
+    <ul class="jm-contact">
+      {{ range $person.Params.profiles }}
+        {{ if hasPrefix .url "mailto:" }}
+          <li><a class="jm-email" href="{{ .url | safeURL }}">{{ replace .url "mailto:" "" }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+    <ul class="jm-social" aria-label="Social profiles">
+      {{ range $person.Params.profiles }}
+        {{ if not (hasPrefix .url "mailto:") }}
+          <li><a href="{{ .url | safeURL }}" target="_blank" rel="noopener" aria-label="{{ if eq .icon "brands/x" }}X{{ else if eq .icon "brands/linkedin" }}LinkedIn{{ else }}{{ .label | default .icon }}{{ end }}">{{ partial "functions/get_icon" (dict "name" .icon "attributes" "aria-hidden=\"true\" width=\"24\" height=\"24\"") }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </aside>
+
+  <div class="jm-content">
+    <p class="jm-market">{{ $content.market }}</p>
+    <nav class="jm-materials" aria-label="Job market materials">
+      <a href="{{ "upload/cv.pdf" | relURL }}">CV</a>
+      <a href="{{ $paper.Params.url_pdf | relURL }}">Job Market Paper</a>
+      {{ range $person.Params.profiles }}{{ if hasPrefix .url "mailto:" }}<a href="{{ .url | safeURL }}">Email</a>{{ end }}{{ end }}
+    </nav>
+    <div class="jm-intro">{{ $page.RenderString $content.text }}</div>
+    <section class="jm-paper" aria-labelledby="jmp-heading">
+      <h2 id="jmp-heading">Job Market Paper</h2>
+      <h3><a href="{{ $paper.RelPermalink }}">{{ $paper.Title }}</a></h3>
+      <nav class="jm-paper-links" aria-label="Job market paper links">
+        <a href="{{ $paper.Params.url_pdf | relURL }}">Paper</a>
+        <a href="{{ $paper.RelPermalink }}">Abstract</a>
+      </nav>
+      <div class="jm-abstract">{{ $page.RenderString $content.paper_abstract }}</div>
+    </section>
+  </div>
+</div>

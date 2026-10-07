@@ -1,39 +1,23 @@
 ---
-# Leave the homepage title empty to use the site title
+# Homepage content; layout and type are scoped to the job-market-home block.
 title:
 date: 2022-10-24
 type: landing
 
 sections:
-  - block: resume-biography
+  - block: job-market-home
+    id: about
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-      text:
-    design:
-      css_class: dark
-      background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: background.jpg
-          filters:
-            brightness: 0.8
-          size: cover
-          position: center
-          parallax: false
-  - block: markdown
-    content:
-      title: 'Welcome!'
-      subtitle: ''
+      market: '2026–27 Economics Job Market Candidate'
       text: |-
-        I am an empirical economist and currently a postdoc at the Kellogg School of Management at Northwestern University. I work on Development Economics, Political Economy, and Economic History. I am on the 2026-27 job market.
-    
-        My job market paper studies the cultural transmission of son preference across groups and across generations. My research also studies the interplay between economics, politics, and cultures.
-    
-        Prior to Northwestern University, I received my PhD in Economics in 2025 and MA in Economics from the Toulouse School of Economics. I also hold a BBA in Economics from the Chinese University of Hong Kong in Shenzhen.
-        
+        I am an empirical economist studying how culture, institutions, and politics shape economic behavior, and how economic change influences social and political preferences. My research lies at the intersection of development economics, political economy, and economic history.
 
+        I received my PhD in Economics from the Toulouse School of Economics in 2025.
+      paper_path: '/publication/son preference'
+      paper_abstract: |-
+        I study how son preference spreads across groups and persists across generations. I exploit the quasi-random settlement of mainland Chinese migrants in Taiwan, measuring their son preference through ancestor worship in their places of origin. After the Legalization of Abortion in 1985, local parents exposed to migrants with stronger son preference became more likely to select for sons and, when they had no son, to continue childbearing. Among migrants' descendants, son preference persists through paternal lineage and migrant communities.
     design:
-      columns: '1'
+      spacing:
+        padding: ['0', '0', '0', '0']
 ---
