@@ -27,9 +27,10 @@ sections:
       title: 'Welcome!'
       subtitle: ''
       text: |-
-        I am an empirical economist and study the questions about the determinants of individual beliefs and behaviors. My research fields are Development Economics, Economic History, and Political Economy. In one of my ongoing works, I identify and compare both horizontal transmission and vertical transmission of son preference using natural experiments, historical archives, and population censuses.
+        I am an empirical economist and currently a postdoc at the Kellogg School of Management at Northwestern University. I work on Development Economics, Political Economy, and Economic History. I am on the 2026-27 job market.
+        My job market paper studies the cultural transmission of son preference across groups and across generations. My research also studies the interplay between economics, politics, and cultures.
     
-        I received my PhD in Economics from the Toulouse School of Economics in September 2025. Prior to this, I earned my Bachelor's degree in Economics from the Chinese University of Hong Kong in Shenzhen in 2018.
+        Prior to Northwestern University, I received my PhD in Economics in 2025 and MA in Economics from the Toulouse School of Economics. I also hold a BBA in Economics from the Chinese University of Hong Kong in Shenzhen.
         
 
     design:
