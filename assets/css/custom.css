@@ -42,7 +42,10 @@
 .homepage-jmp h3 {
   font-size: 25px;
   line-height: 1.4;
+  text-align: center;
 }
+.homepage-jmp .homepage-paper { width: 100%; max-width: 100%; }
+.homepage-jmp .homepage-paper h3 { margin: 12px 0 16px; }
 @media (max-width: 640px) {
   #section-resume-biography .avatar-wrapper,
   #section-resume-biography .avatar {
@@ -59,5 +62,5 @@
   .homepage-intro p, .homepage-jmp p { font-size: 18px; }
   .homepage-intro > div > div:first-child,
   .homepage-jmp > div > div:first-child { font-size: 30px; }
-  .homepage-jmp h3 { font-size: 23px; }
+  .homepage-jmp h3 { font-size: 23px; text-align: left; }
 }

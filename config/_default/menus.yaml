@@ -7,12 +7,9 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Job Market Paper
-    url: /#job-market-paper
-    weight: 11
   - name: Research
     url: /publication
-    weight: 12
+    weight: 11
   # - name: Talks
   #   url: /event
   #   weight: 12

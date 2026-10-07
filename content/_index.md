@@ -42,14 +42,11 @@ sections:
       css_class: homepage-intro
       spacing:
         padding: ['44px', '0', '36px', '0']
-  - block: markdown
+  - block: homepage-publication
     id: job-market-paper
     content:
       title: 'Job Market Paper'
-      text: |-
-        ### [The Transmission of Son Preference](/upload/papers/Son_Preference.pdf)
-
-        I study how son preference spreads across groups and persists across generations. I exploit the quasi-random settlement of mainland Chinese migrants in Taiwan, measuring their son preference through ancestor worship in their places of origin. After the Legalization of Abortion in 1985, local parents exposed to migrants with stronger son preference became more likely to select for sons and, when they had no son, to continue childbearing. Among migrants' descendants, son preference persists through paternal lineage and migrant communities.
+      publication: 'publication/son preference'
     design:
       columns: '1'
       css_class: homepage-jmp

@@ -1,0 +1,29 @@
+{{/* Keep the homepage paper in sync with its Research article. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $paper := site.GetPage $block.content.publication }}
+{{ if not $paper }}
+  {{ errorf "Homepage publication %q was not found" $block.content.publication }}
+{{ end }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $block.content.title | emojify | $page.RenderString }}
+  </div>
+  {{ with $paper }}
+    {{ $pdf := .Params.url_pdf | default .RelPermalink | relURL }}
+    {{ $abstract := .Params.abstract }}
+    {{ if not $abstract }}
+      {{/* Research currently stores its abstract under a Markdown heading. */}}
+      {{ $abstract = .RawContent }}
+      {{ $abstractSection := `(?ims)^#{1,6}[ \t]+Abstract[ \t]*#*[ \t]*\r?\n(.*?)(?:^#{1,6}[ \t]+|\z)` }}
+      {{ with findRE $abstractSection .RawContent 1 }}
+        {{ $abstract = replaceRE $abstractSection "${1}" (index . 0) }}
+      {{ end }}
+    {{ end }}
+    <div class="homepage-paper">
+      <h3><a href="{{ $pdf }}">{{ .Title }}</a></h3>
+      {{ .RenderString (dict "display" "block") $abstract }}
+    </div>
+  {{ end }}
+</div>
