@@ -8,6 +8,7 @@
   height: 260px;
   max-width: 260px;
   max-height: 260px;
+  object-position: 50% 30%;
 }
 #section-resume-biography .portrait-title > div:first-child {
   font-size: 38px;
@@ -15,11 +16,6 @@
 }
 #section-resume-biography .portrait-title h3 {
   font-size: 22px;
-  line-height: 1.5;
-}
-#section-resume-biography .profile-job-market {
-  margin: 8px 0 14px;
-  font-size: 19px;
   line-height: 1.5;
 }
 #section-resume-biography .portrait-title > div:not(:first-child) {
@@ -56,7 +52,6 @@
     font-size: 28px;
   }
   #section-resume-biography .portrait-title h3 { font-size: 21px; }
-  #section-resume-biography .profile-job-market { font-size: 17px; }
   #section-resume-biography .portrait-title > div:not(:first-child) { font-size: 18px; }
   .homepage-intro p, .homepage-jmp p { font-size: 18px; }
   .homepage-intro > div > div:first-child,

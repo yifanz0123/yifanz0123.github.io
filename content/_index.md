@@ -9,7 +9,7 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-      market: 2026–27 Economics Job Market Candidate
+      market: On the 2026-2027 Job Market
       text:
     design:
       css_class: dark

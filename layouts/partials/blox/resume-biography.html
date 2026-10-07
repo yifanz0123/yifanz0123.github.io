@@ -39,7 +39,7 @@
   {{ if $avatar }}
 
   <div class="avatar-wrapper {{ if $img }}-mt-[105px]{{else}}mt-10{{end}}">
-    {{ $avatar_image := $avatar.Fill "560x560 Center" }}
+    {{ $avatar_image := $avatar.Resize "560x" }}
     <img class="avatar rounded-full bg-white dark:bg-gray-800 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
          width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
     {{with $person.status.icon}}<span class="avatar-emoji">{{.|emojify}}</span>{{end}}
@@ -59,8 +59,8 @@
       {{- end -}}
     </div>
 
+    {{ with $block.content.market }}<h3 class="font-semibold mb-1">{{ . }}</h3>{{ end }}
     {{ with $person.role }}<h3 class="font-semibold mb-1">{{ . | markdownify | emojify }}</h3>{{ end }}
-    {{ with $block.content.market }}<p class="profile-job-market">{{ . }}</p>{{ end }}
 
     {{ range $person.organizations }}
     <div class="mb-2">
