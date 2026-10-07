@@ -13,6 +13,8 @@ sections:
       text:
     design:
       css_class: dark
+      spacing:
+        padding: ['28px', '0', '32px', '0']
       background:
         color: black
         image:
@@ -30,7 +32,7 @@ sections:
       text: |-
         I am an empirical economist and currently a postdoc at the Kellogg School of Management at Northwestern University. I work on Development Economics, Political Economy, and Economic History.
     
-        My job market paper studies the cultural transmission of son preference across groups and across generations. My research also studies the interplay between economics, politics, and cultures.
+        My research also studies the interplay between economics, politics, and cultures.
     
         Prior to Northwestern University, I received my PhD in Economics in 2025 and MA in Economics from the Toulouse School of Economics. I also hold a BBA in Economics from the Chinese University of Hong Kong in Shenzhen.
         
@@ -38,13 +40,14 @@ sections:
     design:
       columns: '1'
       css_class: homepage-intro
+      spacing:
+        padding: ['44px', '0', '36px', '0']
   - block: markdown
+    id: job-market-paper
     content:
       title: 'Job Market Paper'
       text: |-
-        ### [The Transmission of Son Preference](/publication/son-preference/)
-
-        [Paper](/upload/papers/Son_Preference.pdf) · [Abstract](/publication/son-preference/)
+        ### [The Transmission of Son Preference](/upload/papers/Son_Preference.pdf)
 
         I study how son preference spreads across groups and persists across generations. I exploit the quasi-random settlement of mainland Chinese migrants in Taiwan, measuring their son preference through ancestor worship in their places of origin. After the Legalization of Abortion in 1985, local parents exposed to migrants with stronger son preference became more likely to select for sons and, when they had no son, to continue childbearing. Among migrants' descendants, son preference persists through paternal lineage and migrant communities.
     design:

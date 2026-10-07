@@ -2,7 +2,10 @@
 #section-resume-biography .avatar-wrapper {
   width: 260px;
   height: 260px;
+  margin-top: 0;
 }
+#section-resume-biography #profile { padding: 10px; }
+#job-market-paper { scroll-margin-top: 96px; }
 #section-resume-biography .avatar {
   width: 260px;
   height: 260px;
