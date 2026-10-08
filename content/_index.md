@@ -32,9 +32,9 @@ sections:
       text: |-
         I am an empirical economist and currently a postdoc at the Kellogg School of Management at Northwestern University. I work on Development Economics, Political Economy, and Economic History.
     
-        My job market paper studies the cultural transmission of son preference across groups and across generations. My research also studies the interplay between economics, politics, and cultures.
+        My job market paper studies how son preference spreads across groups and persists across generations. My other work examines how information and economic change shape political preferences and economic behavior.
     
-        Prior to Northwestern University, I received my PhD in Economics in 2025 and MA in Economics from the Toulouse School of Economics. I also hold a BBA in Economics from the Chinese University of Hong Kong in Shenzhen.
+        Prior to Northwestern University, I received my PhD in Economics in 2025 and MA in Economics from the Toulouse School of Economics. I also hold a BBA in Economics from The Chinese University of Hong Kong, Shenzhen.
         
 
     design:
