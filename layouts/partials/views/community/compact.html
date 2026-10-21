@@ -14,19 +14,39 @@
 <div class="md:flex">
 
   <div class="p-8 flex-1">
+    {{ if eq $item.Section "publication" }}
+    {{ $authorNames := slice }}
+    {{ range $item.Params.authors }}
+      {{ $name := . | title }}
+      {{ with site.GetPage (printf "/authors/%s" (. | urlize)) }}
+        {{ $name = .Title | title }}
+        {{ if and .Params.first_name .Params.last_name }}
+          {{ $name = printf "%s %s" (trim .Params.first_name " ") (trim .Params.last_name " ") }}
+        {{ end }}
+      {{ end }}
+      {{ $authorNames = $authorNames | append $name }}
+    {{ end }}
+    <p class="mb-5 text-md text-black dark:text-white">
+      {{ delimit $authorNames ", " }} ({{ $item.Date.Format "2006" }}).
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="text-primary-700 dark:text-primary-200 font-semibold">{{ $item.Title }}</a>.
+    </p>
+    {{ else }}
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="mb-5 block">
       <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold">
         {{ $item.Title }}
       </div>
     </a>
+    {{ end }}
 
     <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
       {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
     </p>
 
+    {{ if ne $item.Section "publication" }}
     <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">
       {{- $item.Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}
     </p>
+    {{ end }}
 
     <div class="mt-2 flex flex-wrap gap-2">
       {{ if $item.Params.url_dataset }}

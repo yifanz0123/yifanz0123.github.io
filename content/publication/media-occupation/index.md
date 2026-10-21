@@ -1,5 +1,8 @@
 ---
 title: "Media Exposure and Occupational Choice"
+slug: media-occupation
+aliases:
+  - /publication/radio-propaganda/
 authors:
   - admin
   - Mingduo Zhao
