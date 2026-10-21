@@ -2,7 +2,7 @@
 title: "Media Exposure and Occupational Choice"
 authors:
   - admin
-  - mingduo zhao
+  - Mingduo Zhao
 
 date: "2026-10-20"
 doi: ""

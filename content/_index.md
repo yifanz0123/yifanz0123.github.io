@@ -32,7 +32,7 @@ sections:
       text: |-
         I am an empirical economist and currently a postdoc at the Kellogg School of Management at Northwestern University. I work on Development Economics, Political Economy, and Economic History.
     
-       My job market paper studies how cultural transmission contributes to the problem of missing women. My other work examines how information and economic change shape political preferences and economic behavior.
+        My job market paper studies how cultural transmission contributes to the problem of missing women. My other work examines how information and economic change shape political preferences and economic behavior.
     
         Prior to Northwestern University, I received my PhD in Economics in 2025 from the Toulouse School of Economics. I also hold a BBA in Economics from The Chinese University of Hong Kong, Shenzhen.
         
