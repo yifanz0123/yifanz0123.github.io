@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main class="publication-page">
+  <article class="publication-article">
+    <header class="publication-header">
+      <h1 class="publication-title">{{ .Title }}</h1>
+      {{ $authorNames := slice }}
+      {{ range .Params.authors }}
+        {{ $name := . | title }}
+        {{ with site.GetPage (printf "/authors/%s" (. | urlize)) }}
+          {{ $name = .Title | title }}
+          {{ if and .Params.first_name .Params.last_name }}
+            {{ $name = printf "%s %s" (trim .Params.first_name " ") (trim .Params.last_name " ") }}
+          {{ end }}
+        {{ end }}
+        {{ $authorNames = $authorNames | append $name }}
+      {{ end }}
+      <p class="publication-authors">{{ delimit $authorNames ", " }}</p>
+      {{ if and .Date (not .Params.hide_date) }}
+      <p class="publication-date">{{ .Date | time.Format (site.Params.locale.date_format | default ":date_long") }}</p>
+      {{ end }}
+      <div class="publication-links">{{ partial "page_links_div.html" . }}</div>
+    </header>
+    <div class="publication-content prose prose-slate dark:prose-invert">
+      {{ .Content }}
+    </div>
+    {{ partial "components/last-edited.html" . }}
+    <div class="publication-footer prose prose-slate dark:prose-invert">
+      {{ .Scratch.Set "invert_pager" true }}
+      {{ partial "page_footer" . }}
+    </div>
+  </article>
+</main>
+{{ end }}

@@ -22,7 +22,7 @@
       {{ end }}
     {{ end }}
     <div class="homepage-paper">
-      <h3><a href="{{ $pdf }}">{{ .Title }}</a></h3>
+      <h3><a href="{{ $pdf }}">{{ .Title }}</a><a class="homepage-pdf-link" href="{{ $pdf }}" target="_blank" rel="noopener" aria-label="Download {{ .Title }} (PDF)">PDF</a></h3>
       {{ .RenderString (dict "display" "block") $abstract }}
     </div>
   {{ end }}

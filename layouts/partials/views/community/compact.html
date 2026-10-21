@@ -29,6 +29,7 @@
     <p class="research-citation mb-5 text-md text-black dark:text-white">
       {{ delimit $authorNames ", " }} ({{ $item.Date.Format "2006" }}).
       <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="text-primary-700 dark:text-primary-200 font-semibold">{{ $item.Title }}</a>.
+      {{ if $item.Params.job_market_paper }}<span class="research-jmp-badge">Job Market Paper</span>{{ end }}
     </p>
     {{ else }}
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="mb-5 block">

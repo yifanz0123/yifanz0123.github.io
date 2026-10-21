@@ -1,5 +1,6 @@
 ---
 title: "The Transmission of Son Preference"
+job_market_paper: true
 authors:
   - admin
 date: "2026-10-20"

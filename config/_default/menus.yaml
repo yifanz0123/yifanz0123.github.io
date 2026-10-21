@@ -22,9 +22,6 @@ main:
   # - name: Research Statement
   #  url: statement/
   #  weight: 40
-  - name: Datasets
-    url: /datasets
-    weight: 45
   - name: CV
     url: /upload/cv.pdf
     weight: 50

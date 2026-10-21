@@ -14,7 +14,7 @@ sections:
     design:
       css_class: dark
       spacing:
-        padding: ['28px', '0', '32px', '0']
+        padding: ['12px', '0', '16px', '0']
       background:
         color: black
         image:
@@ -41,7 +41,7 @@ sections:
       columns: '1'
       css_class: homepage-intro
       spacing:
-        padding: ['44px', '0', '36px', '0']
+        padding: ['32px', '0', '36px', '0']
   - block: homepage-publication
     id: job-market-paper
     content:
