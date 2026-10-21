@@ -5,7 +5,7 @@ authors:
 
 # author_notes:
 
-date: "2024-06-15"
+date: "2026-10-20"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -23,7 +23,7 @@ publishDate: ""
 # abstract: 
 
 # Summary. An optional shortened abstract.
-summary: "Radio propaganda not only reshapes individuals' political beliefs and behaviors but also has a strong impact on their occupation choices"
+summary: "Media can influence individual career choice in the long run."
 
 
 featured: false
