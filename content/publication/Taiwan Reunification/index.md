@@ -1,5 +1,5 @@
 ---
-title: "The Determinants of Taiwanese Support for Reunification with the Mainland"
+title: "The Economic Determinants of Taiwanese Sentiments towards Reunification with Mainland China"
 authors:
   - yu-chi hsieh
   - nancy-qian
