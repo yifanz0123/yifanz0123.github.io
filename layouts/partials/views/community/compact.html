@@ -11,7 +11,7 @@
 {{ $anchor := $item.Params.image.focal_point | default "Center" }}
 <br>
 
-<div class="md:flex">
+<div class="md:flex{{ if eq $item.Section "publication" }} research-paper{{ end }}">
 
   <div class="p-8 flex-1">
     {{ if eq $item.Section "publication" }}
@@ -26,7 +26,7 @@
       {{ end }}
       {{ $authorNames = $authorNames | append $name }}
     {{ end }}
-    <p class="mb-5 text-md text-black dark:text-white">
+    <p class="research-citation mb-5 text-md text-black dark:text-white">
       {{ delimit $authorNames ", " }} ({{ $item.Date.Format "2006" }}).
       <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="text-primary-700 dark:text-primary-200 font-semibold">{{ $item.Title }}</a>.
     </p>
@@ -38,7 +38,7 @@
     </a>
     {{ end }}
 
-    <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+    <p class="{{ if eq $item.Section "publication" }}research-summary {{ end }}block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
       {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
     </p>
 
