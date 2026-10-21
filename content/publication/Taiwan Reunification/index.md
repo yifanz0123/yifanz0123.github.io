@@ -1,14 +1,16 @@
 ---
 title: "The Determinants of Taiwanese Support for Reunification with the Mainland"
 authors:
+  - yu-chi hsieh
   - nancy-qian
   - marco-tabellini
   - admin
   
 # author_notes:
 
-date: "2025-09-23"
+date: "2026-08-31"
 doi: ""
+url_pdf: upload/papers/Taiwan_Reunification.pdf
 
 # Schedule page publish date (NOT publication's date).
 publishDate: ""
@@ -25,10 +27,14 @@ publishDate: ""
 # abstract: 
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "We find that mainland China's growth has divergent effects on support for reunification."
 
 
 featured: false
+---
+## Abstract
+  
+We study how economic growth affects support for autocratic regimes. We examine this question in Taiwan, where reunification with mainland China would entail political and economic integration under an autocratic system. Using individual survey data and voting records from 1995 to 2024, we find that mainland economic growth increases support for reunification among more educated Taiwanese, while increasing support for independence among less educated Taiwanese. Consistent with economic incentives underlying these divergent responses, mainland growth raises income and cross-strait economic engagement among more educated Taiwanese, while reducing income among the less educated. We complement the observational analysis with an online survey experiment that independently varies information about mainland economic performance and military activity, and elicits beliefs about the consequences of reunification and independence. Positive information about mainland growth raises support for reunification more among more educated respondents. By contrast, information about military activity does not affect respondents' preferences for reunification. Our findings show that economic opportunities can increase democratic citizens’ willingness to accept autocratic rule, and that this response depends on who benefits from growth.
 
 # links:
 # - name: ""
