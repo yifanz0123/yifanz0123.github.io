@@ -114,6 +114,16 @@
   font-size: 16px;
   line-height: 1.6;
 }
+.teaching-courses caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 .teaching-courses {
   width: 100%;
   border-collapse: collapse;
