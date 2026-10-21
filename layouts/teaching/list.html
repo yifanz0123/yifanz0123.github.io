@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="teaching-page" aria-label="Teaching">
+  <header class="teaching-header">
+    <h1>{{ .Params.institution }}</h1>
+    <p>{{ .Params.role }}</p>
+  </header>
+  <table class="teaching-courses">
+    <caption class="sr-only">Courses taught as a {{ .Params.role }} at {{ .Params.institution }}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">Level</th>
+        <th scope="col">Term</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Params.courses }}
+      <tr>
+        <td class="teaching-course">{{ .name }}</td>
+        <td class="teaching-level">{{ .level }}</td>
+        <td class="teaching-term">{{ .term }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</main>
+{{ end }}

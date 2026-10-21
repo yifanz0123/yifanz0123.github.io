@@ -92,3 +92,89 @@
 @media (max-width: 640px) {
   .research-paper .research-citation { font-size: 18px; }
 }
+
+/* Teaching: align with the Research list and keep course details readable. */
+.teaching-page {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 96px 32px 80px;
+}
+.teaching-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.teaching-header p {
+  margin: 10px 0 36px;
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.teaching-courses {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.teaching-courses th,
+.teaching-courses td {
+  padding: 16px 0;
+  text-align: left;
+  vertical-align: baseline;
+}
+.teaching-courses th {
+  padding: 0 0 12px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+.teaching-courses th:first-child { width: 55%; }
+.teaching-courses th:nth-child(2) { width: 25%; }
+.teaching-courses th:last-child,
+.teaching-courses .teaching-term { text-align: right; }
+.teaching-courses .teaching-course {
+  padding-right: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.teaching-level,
+.teaching-term {
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.dark .teaching-header p,
+.dark .teaching-level,
+.dark .teaching-term { color: #d1d5db; }
+.dark .teaching-courses th { color: #9ca3af; }
+@media (max-width: 640px) {
+  .teaching-page { padding: 56px 24px 64px; }
+  .teaching-header h1 { font-size: 25px; }
+  .teaching-header p { margin-bottom: 24px; }
+  .teaching-courses,
+  .teaching-courses tbody { display: block; }
+  .teaching-courses thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .teaching-courses tbody tr {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 8px;
+    row-gap: 4px;
+    padding: 14px 0;
+  }
+  .teaching-courses td { padding: 0; }
+  .teaching-courses .teaching-course { grid-column: 1 / -1; padding-right: 0; font-size: 19px; }
+  .teaching-courses .teaching-term { text-align: left; }
+  .teaching-term::before { content: "·"; margin-right: 8px; }
+}

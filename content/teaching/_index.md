@@ -1,15 +1,19 @@
 ---
-title: 
-date:
+title: Teaching
 pager: false
+institution: Toulouse School of Economics
+role: Teaching Assistant
+courses:
+  - name: Program Evaluation
+    level: Graduate
+    term: Spring 2023
+  - name: Microeconomics
+    level: Undergraduate
+    term: Spring 2024
+  - name: Macroeconomics
+    level: Undergraduate
+    term: Fall 2023
+  - name: Industrial Organization
+    level: Undergraduate
+    term: Spring 2022
 ---
-
-
-## TSE (TA)
-
- Microeconomics, 1<sup>st</sup> year Bachelor, spring 2024  
- Macroeconomics, 2<sup>nd</sup> year Bachelor, fall 2023  
- Program Evaluation, 1<sup>st</sup> year Master, spring 2023  
- Industrial Organization, 3<sup>rd</sup> year Bachelor, spring 2022
-
-
