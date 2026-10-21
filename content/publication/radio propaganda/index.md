@@ -1,12 +1,12 @@
 ---
-title: "Radio (Counter-)propaganda and Job Choices"
+title: "Media Exposure and Occupational Choice"
 authors:
   - admin
-
-# author_notes:
+  - mingduo-zhao
 
 date: "2026-10-20"
 doi: ""
+url_pdf: upload/papers/Media_Occupation.pdf
 
 # Schedule page publish date (NOT publication's date).
 publishDate: ""
@@ -63,4 +63,4 @@ featured: false
 ---
 ## Abstract
   
-Drawing on individual-level data from the 2000-15 population censuses and 2010-20 social surveys, I analyze the consequences of radio (counter-)propaganda from Taiwan on mainland China. My preliminary results suggest that individuals who lived in areas with better exposure to the Voice of Free China during adolescence are less likely to join the bureaucratic system and the Chinese Communist Party. Besides, they have lower trust to the local government but are more likely to start their own business.
+Can temporary access to media from a different political and economic system shape occupational choices decades later? We study Voice of Free China (VFC), a Taiwan-based broadcaster, during mainland China’s relaxation of restrictions on external radio listening in 1979–1989. Combining model-predicted reception with census and survey data, we compare cohorts whose adolescence overlapped with the opening with older cohorts in the same county. Greater adolescent access reduced subsequent bureaucratic employment. This pattern persists among first-generation migrants, alongside greater entrepreneurship, linking adolescent exposure to occupational choices beyond the county of origin. Evidence on political attitudes and protest activity suggests that these occupational effects partly reflect changes in views of government. These findings suggest that temporary media access can have lasting effects on views of government and career preferences.
