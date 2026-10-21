@@ -188,3 +188,15 @@
   .teaching-courses .teaching-term { text-align: left; }
   .teaching-term::before { content: "·"; margin-right: 8px; }
 }
+
+/* Instructors sit beneath course titles, with a lighter visual weight. */
+.teaching-instructor {
+  display: block;
+  margin-top: 5px;
+  color: #6b7280;
+  font-family: "Inter var", ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.dark .teaching-instructor { color: #d1d5db; }

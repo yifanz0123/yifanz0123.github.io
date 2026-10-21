@@ -16,7 +16,10 @@
     <tbody>
       {{ range .Params.courses }}
       <tr>
-        <td class="teaching-course">{{ .name }}</td>
+        <td class="teaching-course">
+          <span class="teaching-course-name">{{ .name }}</span>
+          {{ with .instructor }}<span class="teaching-instructor">Instructor: {{ . }}</span>{{ end }}
+        </td>
         <td class="teaching-level">{{ .level }}</td>
         <td class="teaching-term">{{ .term }}</td>
       </tr>
